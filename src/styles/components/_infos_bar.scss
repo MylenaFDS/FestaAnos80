@@ -25,6 +25,7 @@
     }
     &:hover{
         background-color: $background-color;
+        border-radius: 5px;
     }
     @media (max-width: 640px) {
         display: block;
