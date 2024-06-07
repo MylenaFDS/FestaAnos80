@@ -1,9 +1,32 @@
 // _buttons.scss
 
-.button--primary {
-    background-color: $primary-color;
-    color: $text-color;
-    padding: 10px 20px;
+@import '../variables';
+
+.button {
+    
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        
+        background-color: $primary-color;
+        color: $text-color;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
 }
