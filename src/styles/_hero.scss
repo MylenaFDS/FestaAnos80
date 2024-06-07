@@ -1,0 +1,16 @@
+// _hero.scss
+
+.hero {
+    background: url('../images/80s_bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    
+    &__logo {
+        max-width: 200px;
+    }
+
+    &__text {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+}

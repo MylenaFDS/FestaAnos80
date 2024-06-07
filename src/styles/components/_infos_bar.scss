@@ -1,0 +1,13 @@
+// _infos_bar.scss
+
+.infos-bar {
+    background: rgba(255, 255, 255, 0.1);
+    padding: $container-padding;
+    border-radius: $border-radius;
+
+    &__infos {
+        &__item {
+            margin-bottom: 10px;
+        }
+    }
+}

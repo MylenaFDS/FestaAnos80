@@ -2,12 +2,91 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festa Anos 80</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>Olá</h1>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/80s_logo.jpg" alt="Festa Anos 80">
+            <p class="hero__text">
+                A festa mais incrível dos anos 80 começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Clube Nostalgia - Centro - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 80,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        01/11/2024 às 21hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--music">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Música</h2>
+                <p class="event__details__description">
+                    Prepare-se para dançar ao som dos maiores hits dos anos 80. DJ's e bandas ao vivo para animar a noite!
+                </p>
+            </div>
+            <img class="event__image" src="./images/80s_music.jpg" alt="Música Anos 80">
+        </div>
+    </section>
+    <section class="event event--fashion event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Moda</h2>
+                <p class="event__details__description">
+                    Venha vestido com as roupas mais icônicas da década! Prêmios para as melhores fantasias.
+                </p>
+            </div>
+            <img class="event__image" src="./images/80s_fashion.jpg" alt="Moda Anos 80">
+        </div>
+    </section>
+    <section class="event event--games">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Games</h2>
+                <p class="event__details__description">
+                    Divirta-se com os clássicos dos videogames da época. Uma verdadeira viagem no tempo!
+                </p>
+            </div>
+            <img class="event__image" src="./images/80s_games.jpg" alt="Games Anos 80">
+        </div>
+    </section>
+    <section class="event event--decor event--image-left">
+        <div class="container" data-aos="fade-left"> 
+            <div class="event__details">
+                <h2 class="event__details__title">Decoração</h2>
+                <p class="event__details__description">
+                    O ambiente será todo decorado para te fazer sentir de volta aos anos 80. Cores vibrantes e muito neon!
+                </p>
+            </div>
+            <img class="event__image" src="./images/80s_decor.jpg" alt="Decoração Anos 80">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

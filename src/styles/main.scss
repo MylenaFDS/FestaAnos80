@@ -1,3 +1,13 @@
-body{
-    background-color: green;
+// main.scss
+
+@import 'variables';
+@import 'hero';
+@import 'components/infos_bar';
+@import 'components/buttons';
+@import 'event';
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $font-family;
 }
