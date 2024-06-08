@@ -1,20 +1,54 @@
 // _event.scss
 
 .event {
-    padding: 50px 0;
+    padding: 80px 0;
 
-    &__details__title {
-        font-size: 2em;
-        color: $primary-color;
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
     }
 
-    &__details__description {
-        font-size: 1.2em;
-        margin: 20px 0;
+    .container {
+        display: flex;
+        gap: 40px;
     }
 
     &__image {
-        max-width: 100%;
-        border: 5px solid $primary-color;
+        max-width: 360px;
+        border: 5px solid $primary-color; // Adicionado border
+    }
+
+    &__details {
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: $primary-color; // Movido a cor do título aqui
+        }
+
+        &__description {
+            line-height: 22px;
+            font-size: 1.2em; // Movido o tamanho da fonte aqui
+            margin: 20px 0;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+            max-width: none; // Removido o max-width
+            border: none; // Removido a borda
+        }
+        
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
     }
 }
+
